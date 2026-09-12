@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  color-scheme: light;
+
+  /* ── 🎨 QUANTUM MASTERY HARMONIZED PALETTE ── */
+
+  /* Cool / Quantum side */
+  --bg-primary: #F4F8FC;         /* Quantum Atmospheric Canvas */
+  --bg-workspace: #F4F8FC;       /* Secondary Workspace Canvas */
+  --bg-panel: #FFFFFF;           /* Pure White Cards & Panels */
+  --bg-panel-subtle: #F5F9FC;    /* Subtle Sub-sections */
+  --bg-hover: #EEF4F9;           /* Clean Cool Hover */
+  --bg-active: rgba(175, 216, 244, 0.25); /* Active Item Highlight */
+  --bg-dark: #0C0D12;            /* 15% Deep Midnight Dark */
+  --bg-deep-blue: #2C3F60;       /* 15% Deep Quantum Navy */
+
+  /* Blue Spectrum */
+  --accent-soft-blue: #AFD8F4;   /* Soft Blue / Light Accent / Subtle Tags */
+  --accent-muted-blue: #95AECD;  /* Muted Blue / Structural Borders */
+  --accent-bright-blue: #5F9CD6; /* Bright Blue / Progress Bars & Glows */
+  --accent-primary: #3A68A4;     /* Primary Quantum Blue / Main CTAs */
+  --accent-primary-hover: #2C3F60;
+  --accent-secondary: #5F9CD6;
+  --accent-deep: #2C3F60;
+
+  /* Warm / Human Complementary Accents (3-5%) */
+  --bg-warm: #FFF8F2;            /* Warm Ivory Secondary Backgrounds */
+  --accent-soft-peach: #F4C6AF;  /* Soft Peach / AI Highlights / Badges */
+  --accent-dusty-coral: #CD9F95; /* Dusty Coral Secondary Accents */
+  --accent-warm-gold: #D6B15F;   /* Warm Gold Progress / XP / Certificates */
+  --accent-terracotta: #AD6358;  /* Terracotta / Diagnostic Gap Flags */
+  --accent-copper: #A77B5A;      /* Muted Copper / Institutional / Trainer */
+
+  /* Typography Colors */
+  --text-primary: #0C0D12;       /* Primary Dark / Text */
+  --text-secondary: #2C3F60;     /* Deep Blue Secondary Headings */
+  --text-muted: #64748B;         /* Slate Muted Subtitles */
+  --text-light: #95AECD;         /* Light Muted Blue */
+  --text-warm-white: #F8F3EC;    /* Warm White for Dark Cards */
+
+  /* Borders and Dividers */
+  --border-subtle: #E2E8F0;      /* Slate border */
+  --border-medium: #CBD5E1;      /* Medium border */
+  --border-quantum: #95AECD;     /* Muted Blue Border */
+  --border-active: #3A68A4;      /* Active Primary Blue */
+  --border-warm: #F4C6AF;        /* Warm Peach Border */
+  --border-gold: #D6B15F;        /* Gold Accent Border */
+
+  /* Elevation / Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(12, 13, 18, 0.04);
+  --shadow-sm: 0 1px 3px 0 rgba(12, 13, 18, 0.06), 0 1px 2px -1px rgba(12, 13, 18, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(44, 63, 96, 0.06), 0 2px 4px -2px rgba(44, 63, 96, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(44, 63, 96, 0.08), 0 4px 6px -4px rgba(44, 63, 96, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(12, 13, 18, 0.1), 0 8px 10px -6px rgba(12, 13, 18, 0.04);
+
+  /* Quantum Gate Colors */
+  --gate-x: #AD6358;    /* Terracotta Red */
+  --gate-y: #059669;    /* Emerald Green */
+  --gate-z: #3A68A4;    /* Primary Quantum Blue */
+  --gate-h: #D6B15F;    /* Warm Gold */
+  --gate-cnot: #5F9CD6; /* Bright Sky Blue */
+  --gate-s: #0D9488;    /* Teal */
+  --gate-t: #2C3F60;    /* Deep Navy */
+  --gate-rx: #CD9F95;   /* Dusty Coral */
+  --gate-ry: #16A34A;   /* Green */
+  --gate-rz: #5F9CD6;   /* Bright Blue */
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: #F4F8FC;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(58, 104, 164, 0.06) 1.2px, transparent 0),
+    radial-gradient(1200px 800px at 88% -5%, rgba(14, 165, 233, 0.08) 0%, transparent 60%),
+    radial-gradient(900px 650px at -5% 20%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+    radial-gradient(1000px 750px at 50% 105%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+    radial-gradient(750px 550px at 95% 75%, rgba(214, 177, 95, 0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #F4F8FC 0%, #EBF3FA 50%, #F8FAFC 100%);
+  background-size: 28px 28px, auto, auto, auto, auto, auto;
+  background-attachment: fixed;
+  color: #0F172A;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+select, input, textarea, button {
+  color-scheme: light;
+  font-family: inherit;
+}
+
+select option {
+  background-color: #FFFFFF !important;
+  color: #0C0D12 !important;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 800;
+  color: var(--text-secondary);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2.25rem; margin-bottom: 1.25rem; color: var(--text-primary); }
+h2 { font-size: 1.75rem; margin-bottom: 0.85rem; }
+h3 { font-size: 1.35rem; margin-bottom: 0.75rem; }
+h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+p { line-height: 1.6; margin-bottom: 1rem; color: #475569; }
+
+/* ── Premium Quantum Sidebar Navigation ── */
+.sidebar {
+  width: 270px;
+  min-width: 270px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F5F9FC 100%);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  justifyContent: space-between;
+  height: 100vh;
+  z-index: 20;
+  box-shadow: 1px 0 4px rgba(12, 13, 18, 0.02);
+}
+
+.sidebar-brand {
+  padding: 20px 18px 14px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px;
+  gap: 3px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  min-height: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 transparent;
+}
+
+.sidebar-nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background-color: #CBD5E1;
+  border-radius: 4px;
+}
+
+.sidebar-nav:hover::-webkit-scrollbar-thumb {
+  background-color: #95AECD;
+}
+
+.sidebar-section-header {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--accent-muted-blue);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  padding: 16px 10px 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar-section-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #E2E8F0;
+  margin-left: 4px;
+}
+
+.nav-item {
+  padding: 9px 12px;
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 10px;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid transparent;
+}
+
+.nav-item-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: #F5F9FC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+  transition: all 0.18s ease;
+  border: 1px solid #E2E8F0;
+}
+
+.nav-item:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-hover);
+  transform: translateX(3px);
+}
+
+.nav-item:hover .nav-item-icon {
+  background-color: var(--accent-soft-blue);
+  color: var(--accent-primary);
+  border-color: var(--accent-muted-blue);
+}
+
+.nav-item.active {
+  color: var(--accent-primary);
+  background: linear-gradient(90deg, #FFF8F2 0%, #EFF6FB 100%);
+  border: 1px solid var(--accent-soft-blue);
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(58, 104, 164, 0.08);
+  position: relative;
+}
+
+.nav-item.active .nav-item-icon {
+  background: linear-gradient(135deg, #3A68A4 0%, #2C3F60 100%);
+  color: #FFFFFF;
+  border-color: #3A68A4;
+}
+
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px;
+  width: 4px;
+  background: linear-gradient(180deg, #3A68A4, #5F9CD6);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 8px rgba(58, 104, 164, 0.4);
+}
+
+/* Workspace Container */
+.workspace {
+  flex: 1;
+  overflow-y: auto;
+  background-color: transparent;
+  padding: 32px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* UI Buttons */
+.pf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  text-decoration: none;
+}
+
+.pf-btn-primary {
+  background: linear-gradient(135deg, #0284C7 0%, #2563EB 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+}
+
+.pf-btn-primary:hover {
+  background: linear-gradient(135deg, #0369A1 0%, #1D4ED8 100%);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4);
+  transform: translateY(-1px);
+}
+
+.pf-btn-azure {
+  background: linear-gradient(135deg, #0284C7 0%, #2563EB 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+}
+
+.pf-btn-azure:hover {
+  background: linear-gradient(135deg, #0369A1 0%, #1D4ED8 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4);
+}
+
+.pf-btn-secondary {
+  background-color: #FFFFFF;
+  color: #2C3F60;
+  border-color: #CBD5E1;
+}
+
+.pf-btn-secondary:hover {
+  background-color: #F8FAFC;
+  border-color: #94A3B8;
+  color: #0F172A;
+}
+
+.pf-btn-outline-azure {
+  background-color: #EFF6FB;
+  color: #0284C7;
+  border: 1px solid #BAE6FD;
+}
+
+.pf-btn-outline-azure:hover {
+  background-color: #DCEBF7;
+  color: #0369A1;
+  border-color: #7DD3FC;
+}
+
+.pf-btn-warm {
+  background: linear-gradient(135deg, #A77B5A 0%, #8C6243 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 4px 14px rgba(167, 123, 90, 0.3);
+}
+
+.pf-btn-warm:hover {
+  background: linear-gradient(135deg, #8C6243 0%, #6E492F 100%);
+  transform: translateY(-1px);
+}
+
+.pf-btn-teal {
+  background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);
+}
+
+.pf-btn-emerald {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
+.pf-btn-gold {
+  background: linear-gradient(135deg, #D6B15F 0%, #A47C3A 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 2px 8px rgba(214, 177, 95, 0.25);
+}
+
+.pf-btn-sm {
+  padding: 6px 12px;
+  font-size: 0.78rem;
+}
+
+/* Cards */
+.pf-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pf-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-muted-blue);
+}
+
+.pf-card-dark {
+  background-color: #0C0D12;
+  color: #F8F3EC;
+  border: 1px solid #2C3F60;
+}
+
+/* Frosted Quantum Glassmorphism Cards */
+.pf-glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.82) 0%, rgba(246, 250, 255, 0.72) 100%) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.07), 0 2px 10px rgba(15, 23, 42, 0.02), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pf-glass-card:hover {
+  box-shadow: 0 14px 36px -10px rgba(37, 99, 235, 0.12), 0 4px 14px rgba(15, 23, 42, 0.03), inset 0 1px 0 rgba(255, 255, 255, 1);
+  border-color: rgba(147, 197, 253, 0.85) !important;
+}
+
+.pf-glass-card-glow {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(239, 246, 255, 0.78) 100%) !important;
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(191, 219, 254, 0.9) !important;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px -8px rgba(37, 99, 235, 0.12), inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.pf-glass-inner {
+  background: rgba(255, 255, 255, 0.65) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.7) !important;
+  border-radius: 14px;
+}
+
+.pf-card-warm {
+  background-color: #FFF8F2;
+  border: 1px solid #F4C6AF;
+}
+
+/* Badges */
+.pf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pf-badge-primary {
+  background-color: #EFF6FB;
+  color: #3A68A4;
+  border: 1px solid #AFD8F4;
+}
+
+.pf-badge-success {
+  background-color: #F0FDF4;
+  color: #15803D;
+  border: 1px solid #BBF7D0;
+}
+
+.pf-badge-warning {
+  background-color: #FFFBEB;
+  color: #D97706;
+  border: 1px solid #FDE68A;
+}
+
+.pf-badge-danger {
+  background-color: #FEF2F2;
+  color: #AD6358;
+  border: 1px solid #CD9F95;
+}
+
+.pf-badge-gold {
+  background-color: #FFFDF0;
+  color: #A47C3A;
+  border: 1px solid #D6B15F;
+}
+
+.pf-badge-copper {
+  background-color: #FFF8F2;
+  color: #A77B5A;
+  border: 1px solid #F4C6AF;
+}
+
+/* Progress Bars */
+.pf-progress-track {
+  width: 100%;
+  height: 6px;
+  background-color: #E2E8F0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.pf-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3A68A4 0%, #5F9CD6 100%);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.pf-progress-bar-gold {
+  height: 100%;
+  background: linear-gradient(90deg, #A47C3A 0%, #D6B15F 100%);
+  border-radius: 3px;
+}
+
+.pf-progress-bar-danger {
+  height: 100%;
+  background: linear-gradient(90deg, #AD6358 0%, #CD9F95 100%);
+  border-radius: 3px;
+}
+
+/* Circuit Builder */
+.circuit-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #FFFFFF;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+}
+
+.qubit-wire {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 52px;
+}
+
+.qubit-label {
+  width: 68px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.wire-line {
+  position: absolute;
+  left: 68px;
+  right: 0;
+  height: 2px;
+  background-color: var(--border-medium);
+  z-index: 1;
+}
+
+.drop-zones {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin-left: 20px;
+  gap: 14px;
+}
+
+.drop-zone {
+  width: 48px;
+  height: 48px;
+  border: 1.5px dashed var(--border-medium);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F9FC;
+  transition: all 0.15s;
+}
+
+.drop-zone:hover {
+  border-color: var(--accent-primary);
+  background-color: #EFF6FB;
+}
+
+.drop-zone.active-target {
+  border-color: var(--accent-primary);
+  background-color: #AFD8F4;
+  cursor: pointer;
+}
+
+.placed-gate {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  color: white;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s;
+}
+
+.placed-gate:hover {
+  transform: scale(1.05);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

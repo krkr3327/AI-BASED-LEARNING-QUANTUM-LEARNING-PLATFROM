@@ -1,0 +1,18 @@
+[
+  {
+    "id": "prog-learner-001-crs-qnt-101",
+    "learner_id": "learner-001",
+    "course_id": "crs-qnt-101",
+    "completed_lesson_ids": [
+      "les-1-1"
+    ],
+    "completed_quiz_ids": [],
+    "completed_assessment_ids": [],
+    "completed_challenge_ids": [],
+    "completed_problem_ids": [],
+    "quiz_scores": {},
+    "assessment_scores": {},
+    "overall_percentage": 25.0,
+    "last_activity": "2026-09-11T11:44:17.061175"
+  }
+]

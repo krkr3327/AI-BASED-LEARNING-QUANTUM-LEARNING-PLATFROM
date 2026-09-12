@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bbe82adb-8c75-4ccc-89c9-b30b17ea6b19",
+    "user_id": "usr-753bbde8",
+    "title": "Welcome to the Platform!",
+    "message": "Welcome reddy! Your Learner account is active and ready.",
+    "type": "info",
+    "link": "/learner/dashboard",
+    "is_read": false,
+    "created_at": "2026-09-12T02:52:38.054307"
+  },
+  {
+    "id": "d4eda30b-a716-4b32-98b6-4541852ee91b",
+    "user_id": "usr-6f8d617f",
+    "title": "Welcome to the Platform!",
+    "message": "Welcome SHAIK MUBEENA! Your Trainer account is active and ready.",
+    "type": "info",
+    "link": "/trainer/dashboard",
+    "is_read": false,
+    "created_at": "2026-09-11T17:39:25.624007"
+  },
+  {
+    "id": "a42bcb90-8f53-4929-b226-9ecfe6470b32",
+    "user_id": "usr-620fef7f",
+    "title": "Welcome to the Platform!",
+    "message": "Welcome SHAIK MUBEENA! Your Learner account is active and ready.",
+    "type": "info",
+    "link": "/learner/dashboard",
+    "is_read": false,
+    "created_at": "2026-09-11T16:34:41.475328"
+  },
+  {
+    "id": "576c084f-36d2-4640-995a-084c587b517d",
+    "user_id": "usr-8c65ca38",
+    "title": "Welcome to the Platform!",
+    "message": "Welcome dinesh! Your Learner account is active and ready.",
+    "type": "info",
+    "link": "/learner/dashboard",
+    "is_read": false,
+    "created_at": "2026-09-11T14:26:53.577529"
+  },
+  {
+    "id": "20f44f50-48ad-4148-bd5b-3cad079ed416",
+    "user_id": "usr-eeb92316",
+    "title": "Welcome to the Platform!",
+    "message": "Welcome dinesh! Your Learner account is active and ready.",
+    "type": "info",
+    "link": "/learner/dashboard",
+    "is_read": false,
+    "created_at": "2026-09-11T13:50:04.191006"
+  },
+  {
+    "id": "84b68837-ede7-445a-ae5d-9b2c6f337646",
+    "user_id": "usr-541f9b0a",
+    "title": "Welcome to the Platform!",
+    "message": "Welcome SHAIK MUBEENA! Your Learner account is active and ready.",
+    "type": "info",
+    "link": "/learner/dashboard",
+    "is_read": false,
+    "created_at": "2026-09-11T11:47:50.610246"
+  },
+  {
+    "id": "18370699-99ed-4649-aaef-676942e7a75e",
+    "user_id": "usr-2e3a499d",
+    "title": "Welcome to the Platform!",
+    "message": "Welcome Dinesh! Your Trainer account is active and ready.",
+    "type": "info",
+    "link": "/trainer/dashboard",
+    "is_read": false,
+    "created_at": "2026-09-11T11:45:20.089631"
+  },
+  {
+    "id": "notif-001",
+    "user_id": "learner-001",
+    "title": "Welcome to the Platform!",
+    "message": "You have been automatically enrolled in 'Quantum Computing Foundations & Qiskit Algorithms'. Explore your lessons and complete your first quiz.",
+    "type": "info",
+    "link": "/learner/course/crs-qnt-101",
+    "is_read": false,
+    "created_at": "2026-09-11T11:44:17.061175"
+  },
+  {
+    "id": "notif-002",
+    "user_id": "trainer-001",
+    "title": "New Student Enrolled",
+    "message": "Alex Rivera has enrolled in 'Quantum Computing Foundations & Qiskit Algorithms'.",
+    "type": "success",
+    "link": "/trainer/learners",
+    "is_read": false,
+    "created_at": "2026-09-11T11:44:17.061175"
+  }
+]

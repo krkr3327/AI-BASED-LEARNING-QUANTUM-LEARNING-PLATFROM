@@ -1,0 +1,513 @@
+{
+  "users": {
+    "trainer-001": {
+      "id": "trainer-001",
+      "name": "Prof. Sarah Jenkins",
+      "email": "trainer@platform.edu",
+      "password": "trainer123",
+      "role": "trainer",
+      "phone": "+1 (555) 234-5678",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "bio": "Lead Senior Quantum & AI Systems Instructor with 12+ years of research and curriculum development experience.",
+      "expertise": [
+        "Quantum Computing",
+        "Python Data Science",
+        "Algorithm Optimization",
+        "Cloud Architectures"
+      ],
+      "created_at": "2026-09-11T11:44:17.060177"
+    },
+    "learner-001": {
+      "id": "learner-001",
+      "name": "Alex Rivera",
+      "email": "student@platform.edu",
+      "password": "student123",
+      "role": "learner",
+      "phone": "+1 (555) 987-6543",
+      "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&auto=format&fit=crop&q=80",
+      "bio": "Aspiring Quantum Software Engineer & Machine Learning enthusiast.",
+      "expertise": [],
+      "created_at": "2026-09-11T11:44:17.061175"
+    },
+    "usr-2e3a499d": {
+      "id": "usr-2e3a499d",
+      "name": "Dinesh",
+      "email": "dinesh@gmail.com",
+      "password": "123456",
+      "role": "trainer",
+      "phone": null,
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Dinesh",
+      "bio": "Active trainer on the Platform",
+      "expertise": [],
+      "created_at": "2026-09-11T11:45:20.086246"
+    },
+    "usr-541f9b0a": {
+      "id": "usr-541f9b0a",
+      "name": "SHAIK MUBEENA",
+      "email": "shaikmubeena003@gmail.com",
+      "password": "123456",
+      "role": "learner",
+      "phone": "+919346222007",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=SHAIK MUBEENA",
+      "bio": "Active learner on the Platform",
+      "expertise": [],
+      "created_at": "2026-09-11T11:47:50.604570"
+    },
+    "usr-eeb92316": {
+      "id": "usr-eeb92316",
+      "name": "dinesh",
+      "email": "dineshreddy29@gmail.com",
+      "password": "123456",
+      "role": "learner",
+      "phone": null,
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=dinesh",
+      "bio": "Active learner on the Platform",
+      "expertise": [],
+      "created_at": "2026-09-11T13:50:04.183659"
+    },
+    "usr-8c65ca38": {
+      "id": "usr-8c65ca38",
+      "name": "dinesh",
+      "email": "dinesh591@gmail.com",
+      "password": "Dinesh@591",
+      "role": "learner",
+      "phone": null,
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=dinesh",
+      "bio": "Active learner on the Platform",
+      "expertise": [],
+      "created_at": "2026-09-11T14:26:53.560377"
+    },
+    "usr-620fef7f": {
+      "id": "usr-620fef7f",
+      "name": "SHAIK MUBEENA",
+      "email": "mubeena003@gmail.com",
+      "password": "123456",
+      "role": "learner",
+      "phone": "+919346222007",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=SHAIK MUBEENA",
+      "bio": "Active learner on the Platform",
+      "expertise": [],
+      "created_at": "2026-09-11T16:34:41.459849"
+    },
+    "usr-6f8d617f": {
+      "id": "usr-6f8d617f",
+      "name": "SHAIK MUBEENA",
+      "email": "smubeena003@gmail.com",
+      "password": "123456",
+      "role": "trainer",
+      "phone": "+919346222007",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=SHAIK MUBEENA",
+      "bio": "Active trainer on the Platform",
+      "expertise": [],
+      "created_at": "2026-09-11T17:39:25.569639"
+    },
+    "usr-753bbde8": {
+      "id": "usr-753bbde8",
+      "name": "reddy",
+      "email": "ravikiranreddykarnati@gmail.com",
+      "password": "ravi12345",
+      "role": "learner",
+      "phone": null,
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=reddy",
+      "bio": "Active learner on the Platform",
+      "expertise": [],
+      "created_at": "2026-09-12T02:52:38.024174"
+    }
+  },
+  "courses": {
+    "crs-qnt-101": {
+      "id": "crs-qnt-101",
+      "title": "Quantum Computing Foundations & Qiskit Algorithms",
+      "description": "Master the fundamental mechanics of quantum states, superposition, entanglement, and build executable quantum circuits.",
+      "category": "Quantum Computing",
+      "level": "Beginner to Intermediate",
+      "duration": "6 Weeks (24 Hours)",
+      "thumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&auto=format&fit=crop&q=80",
+      "trainer_id": "trainer-001",
+      "trainer_name": "Prof. Sarah Jenkins",
+      "is_published": true,
+      "created_at": "2026-09-11T11:44:17.061175",
+      "modules": [
+        {
+          "id": "mod-1",
+          "title": "Module 1: Superposition and Quantum Bits (Qubits)",
+          "description": "Mathematical representations of state vectors and single-qubit rotations.",
+          "order": 1,
+          "lessons": [
+            {
+              "id": "les-1-1",
+              "title": "Introduction to Qubits & The Bloch Sphere",
+              "type": "theory",
+              "duration": "18 min",
+              "video_url": null,
+              "content": "# Introduction to Qubits & The Bloch Sphere\n\nIn classical computation, the fundamental unit of information is the **bit**, which holds a deterministic state of either `0` or `1`.\n\nIn **quantum computing**, the fundamental unit is the **qubit** (quantum bit). A qubit can exist in a linear superposition of the computational basis states $|0\\rangle$ and $|1\\rangle$:\n\n$$|\\psi\\rangle = \\alpha |0\\rangle + \\beta |1\\rangle$$\n\nWhere $\\alpha$ and $\\beta$ are complex probability amplitudes satisfying the normalization condition:\n$$|\\alpha|^2 + |\\beta|^2 = 1$$\n\n### Key Concepts:\n1. **Superposition:** The ability of a quantum system to occupy multiple basis states simultaneously until measurement.\n2. **Measurement Collapse:** Upon measurement in the computational basis, the state collapses to $|0\\rangle$ with probability $|\\alpha|^2$ or $|1\\rangle$ with probability $|\\beta|^2$.\n3. **Bloch Sphere Representation:** A geometric visualization on the surface of a 3-dimensional unit sphere where any single-qubit pure state can be expressed as:\n$$|\\psi\\rangle = \\cos\\left(\\frac{\\theta}{2}\\right)|0\\rangle + e^{i\\phi}\\sin\\left(\\frac{\\theta}{2}\\right)|1\\rangle$$\n",
+              "order": 1
+            },
+            {
+              "id": "les-1-2",
+              "title": "Quantum Gates & State Rotations Walkthrough",
+              "type": "video",
+              "duration": "24 min",
+              "video_url": "https://www.youtube.com/embed/QuRna36xnwk",
+              "content": "Watch Prof. Jenkins demonstrate Pauli-X, Hadamard (H), and Phase (S, T) gate applications on IBM Qiskit quantum simulators.",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "mod-2",
+          "title": "Module 2: Entanglement & Bell State Circuits",
+          "description": "Two-qubit interactions, CNOT gates, and EPR pair creation.",
+          "order": 2,
+          "lessons": [
+            {
+              "id": "les-2-1",
+              "title": "Constructing Bell States with Hadamard & CNOT",
+              "type": "theory",
+              "duration": "22 min",
+              "video_url": null,
+              "content": "# Constructing Bell States with Hadamard and CNOT\n\nQuantum entanglement is a phenomenon where the quantum states of two or more particles become inseparable, regardless of the spatial distance separating them.\n\n### The Canonical $\\Phi^+$ Bell State:\nStarting from ground state $|00\\rangle$:\n1. Apply **Hadamard Gate** on Qubit 0:\n$$H|0\\rangle_0 \\otimes |0\\rangle_1 = \\frac{1}{\\sqrt{2}}(|0\\rangle + |1\\rangle) \\otimes |0\\rangle = \\frac{1}{\\sqrt{2}}(|00\\rangle + |10\\rangle)$$\n2. Apply **Controlled-NOT (CNOT)** gate with Qubit 0 as control and Qubit 1 as target:\n$$\\text{CNOT}\\left(\\frac{1}{\\sqrt{2}}(|00\\rangle + |10\\rangle)\\right) = \\frac{|00\\rangle + |11\\rangle}{\\sqrt{2}} = |\\Phi^+\\rangle$$\n\nThis creates maximal entanglement: measuring qubit 0 immediately determines qubit 1!\n",
+              "order": 1
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "id": "not-1",
+          "title": "Complete Quantum Gates Matrix Cheatsheet & Dirac Notation",
+          "description": "Comprehensive reference PDF summary containing unitary matrices for H, X, Y, Z, CNOT, SWAP, and Toffoli gates.",
+          "file_url": "https://raw.githubusercontent.com/qiskit-community/qiskit-translations/master/docs/cheatsheet/cheatsheet.pdf",
+          "file_name": "Quantum_Gates_Cheatsheet.pdf",
+          "uploaded_at": "2026-09-11T11:44:17.061175"
+        },
+        {
+          "id": "not-2",
+          "title": "Mathematical Foundations: Linear Algebra for Quantum Mechanics",
+          "description": "Eigenvalues, Hermiticity, inner/outer products, tensor products and Hilbert spaces summarized for computer scientists.",
+          "file_url": "#",
+          "file_name": "Linear_Algebra_Quantum_Foundations.pdf",
+          "uploaded_at": "2026-09-11T11:44:17.061175"
+        }
+      ],
+      "quizzes": [
+        {
+          "id": "quiz-1",
+          "title": "Qubit Superposition & Gate Algebra Knowledge Check",
+          "description": "Test your conceptual understanding of normalization, Bloch coordinates, and unitary transformations.",
+          "time_limit_mins": 15,
+          "passing_score": 70.0,
+          "questions": [
+            {
+              "id": "q1-1",
+              "question": "If a normalized state is given by $|\\psi\\rangle = \\frac{1}{2}|0\\rangle + c|1\\rangle$, what is the magnitude $|c|^2$?",
+              "options": [
+                "0.25",
+                "0.50",
+                "0.75",
+                "1.00"
+              ],
+              "correct_answer_index": 2,
+              "explanation": "Because $|\\alpha|^2 + |\\beta|^2 = 1$, we have $(1/2)^2 + |c|^2 = 1/4 + |c|^2 = 1 \\Rightarrow |c|^2 = 3/4 = 0.75$."
+            },
+            {
+              "id": "q1-2",
+              "question": "Which quantum logic gate transforms the basis state $|0\\rangle$ into the equal superposition $(|0\\rangle + |1\\rangle)/\\sqrt{2}$?",
+              "options": [
+                "Pauli-X Gate",
+                "Hadamard (H) Gate",
+                "Phase (S) Gate",
+                "Controlled-Z Gate"
+              ],
+              "correct_answer_index": 1,
+              "explanation": "The Hadamard gate creates an equal superposition of $|0\\rangle$ and $|1\\rangle$."
+            },
+            {
+              "id": "q1-3",
+              "question": "What is the matrix representation of the single-qubit Pauli-X gate?",
+              "options": [
+                "[[1, 0], [0, 1]]",
+                "[[0, 1], [1, 0]]",
+                "[[1, 0], [0, -1]]",
+                "[[0, -i], [i, 0]]"
+              ],
+              "correct_answer_index": 1,
+              "explanation": "Pauli-X acts like a quantum NOT gate, represented by [[0, 1], [1, 0]]."
+            }
+          ],
+          "created_at": "2026-09-11T11:44:17.061175"
+        }
+      ],
+      "assessments": [
+        {
+          "id": "asm-1",
+          "title": "Mid-Term Theoretical Assessment: Circuit Depth & Quantum Entanglement",
+          "description": "Formal assessment evaluating circuit synthesis, gate decompositions, and Bell state analysis.",
+          "deadline": "2026-10-30T23:59:59",
+          "total_marks": 50.0,
+          "instructions": "Answer all descriptive and calculation questions clearly. Provide mathematical steps where appropriate.",
+          "questions": [
+            {
+              "id": "aq-1",
+              "question": "Derive the output state vector when applying a Hadamard gate followed by a Pauli-Z gate to the initial state $|0\\rangle$. Explain why phase kickback occurs in multi-qubit systems.",
+              "max_marks": 20.0,
+              "guidelines": "1. Write initial state. 2. Show Hadamard transformation. 3. Apply Z gate matrix. 4. Explain the resulting state $(|0> - |1>)/sqrt(2)$."
+            },
+            {
+              "id": "aq-2",
+              "question": "Explain how the No-Cloning Theorem prevents the exact duplication of an unknown quantum state, and discuss its implications on quantum cryptography and error correction.",
+              "max_marks": 30.0,
+              "guidelines": "Mention linearity of unitary operations, state vectors, and comparison with classical information fan-out."
+            }
+          ],
+          "created_at": "2026-09-11T11:44:17.061175"
+        }
+      ],
+      "challenges": [
+        {
+          "id": "ch-1",
+          "title": "Hands-On Challenge: Construct Quantum Teleportation Protocol",
+          "description": "Implement the full 3-qubit Quantum Teleportation circuit in Python using Qiskit or Cirq logic. Teleport an unknown state $|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle$ from Alice to Bob using an EPR pair.",
+          "difficulty": "Intermediate",
+          "xp_reward": 250,
+          "starter_code": "import numpy as np\n\ndef quantum_teleportation_circuit(alpha, beta):\n    \"\"\"\n    Construct and simulate quantum teleportation of state [alpha, beta].\n    Returns: reconstructed state at Bob's qubit.\n    \"\"\"\n    # TODO: Step 1. Prepare Alice's secret qubit\n    # TODO: Step 2. Create Bell state between Alice (q1) and Bob (q2)\n    # TODO: Step 3. Alice applies CNOT(q0, q1) and H(q0)\n    # TODO: Step 4. Alice measures q0 and q1\n    # TODO: Step 5. Bob applies conditional X and Z gates\n    pass\n",
+          "test_cases": [
+            {
+              "input": "alpha=0.6, beta=0.8",
+              "expected": "Bob state fidelity > 0.99"
+            },
+            {
+              "input": "alpha=1.0, beta=0.0",
+              "expected": "Bob state fidelity = 1.0"
+            }
+          ],
+          "hints": [
+            "Use an entangled pair between Qubit 1 and Qubit 2: H on q1, CX(q1, q2).",
+            "Alice entangles secret Qubit 0 with Qubit 1 using CX(q0, q1) then H(q0).",
+            "Bob applies X if Alice's q1 is 1, and Z if Alice's q0 is 1."
+          ]
+        }
+      ],
+      "problems": [
+        {
+          "id": "prb-1",
+          "title": "Problem #101: Quantum Superposition Probability Engine",
+          "description": "Given two complex numbers representing alpha and beta of a quantum state, calculate the probabilities P(0) and P(1), verify normalization within tolerance 1e-5, and return the Bloch angles (theta, phi) in radians.",
+          "difficulty": "Medium",
+          "starter_code": "import cmath\nimport math\n\ndef calculate_bloch_coordinates(alpha_real, alpha_imag, beta_real, beta_imag):\n    alpha = complex(alpha_real, alpha_imag)\n    beta = complex(beta_real, beta_imag)\n    \n    # Calculate probabilities\n    p0 = abs(alpha)**2\n    p1 = abs(beta)**2\n    \n    # Calculate theta and phi\n    theta = 2 * math.acos(min(1.0, abs(alpha)))\n    phi = cmath.phase(beta) - cmath.phase(alpha)\n    \n    return {\n        \"p0\": round(p0, 4),\n        \"p1\": round(p1, 4),\n        \"theta\": round(theta, 4),\n        \"phi\": round(phi, 4),\n        \"is_normalized\": abs(p0 + p1 - 1.0) < 1e-5\n    }\n",
+          "test_cases": [
+            {
+              "input": "1.0, 0.0, 0.0, 0.0",
+              "output": "{\"p0\": 1.0, \"p1\": 0.0, \"theta\": 0.0, \"phi\": 0.0, \"is_normalized\": true}"
+            },
+            {
+              "input": "0.7071, 0.0, 0.7071, 0.0",
+              "output": "{\"p0\": 0.5, \"p1\": 0.5, \"theta\": 1.5708, \"phi\": 0.0, \"is_normalized\": true}"
+            }
+          ]
+        }
+      ]
+    },
+    "crs-py-201": {
+      "id": "crs-py-201",
+      "title": "Applied Python for AI, Data Structures & High-Performance Computing",
+      "description": "Deep dive into algorithmic complexity, NumPy vectorization, GPU tensor acceleration, and scalable machine learning pipelines.",
+      "category": "Artificial Intelligence & Python",
+      "level": "Advanced",
+      "duration": "8 Weeks (32 Hours)",
+      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop&q=80",
+      "trainer_id": "trainer-001",
+      "trainer_name": "Prof. Sarah Jenkins",
+      "is_published": true,
+      "created_at": "2026-09-11T11:44:17.061175",
+      "modules": [
+        {
+          "id": "py-mod-1",
+          "title": "Module 1: Vectorized Computations and Memory Profiling",
+          "description": "Mastering SIMD operations, memory contiguous arrays, and memory profiling in Python.",
+          "order": 1,
+          "lessons": [
+            {
+              "id": "py-les-1-1",
+              "title": "NumPy Broadcasting & Cache Locality Mechanics",
+              "type": "theory",
+              "duration": "20 min",
+              "video_url": null,
+              "content": "# NumPy Broadcasting & Cache Locality\n\nPython list operations incur significant overhead due to dynamic pointer indirection. NumPy arrays leverage contiguous memory blocks in C, facilitating CPU cache locality and SIMD vector instruction pipelines.\n\n### Key Rules of Broadcasting:\n1. If the two arrays differ in their number of dimensions, the shape of the one with fewer dimensions is padded with ones on its leading (left) side.\n2. If the shape of the two arrays does not match in any dimension, the array with shape equal to 1 in that dimension is stretched to match the other shape.\n3. If in any dimension the sizes disagree and neither is equal to 1, a `ValueError` is raised.\n",
+              "order": 1
+            },
+            {
+              "id": "py-les-1-2",
+              "title": "Profiling Algorithms with cProfile and Memory-Profiler",
+              "type": "video",
+              "duration": "30 min",
+              "video_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+              "content": "Walkthrough of memory bottlenecks and flame graphs in performance-critical codebases.",
+              "order": 2
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "id": "py-not-1",
+          "title": "High-Performance Python Architecture Playbook",
+          "description": "Curated best practices covering Cython, Numba JIT, multi-threading GIL bypass, and multiprocessing patterns.",
+          "file_url": "#",
+          "file_name": "HP_Python_Architecture.pdf",
+          "uploaded_at": "2026-09-11T11:44:17.061175"
+        }
+      ],
+      "quizzes": [
+        {
+          "id": "py-quiz-1",
+          "title": "Python Memory Management & Asynchronous Event Loop Quiz",
+          "description": "Evaluate mastery over GIL, reference counting, weak references, and asyncio event loops.",
+          "time_limit_mins": 10,
+          "passing_score": 75.0,
+          "questions": [
+            {
+              "id": "pq-1",
+              "question": "How does Python's Global Interpreter Lock (GIL) affect multi-threaded CPU-bound execution?",
+              "options": [
+                "It speeds up execution by parallelizing bytecode interpretation across all CPU cores.",
+                "It ensures only one native thread executes Python bytecode at any given moment, bottlenecking pure CPU parallelization.",
+                "It disables garbage collection during thread execution.",
+                "It forces all variables to be stored in global memory."
+              ],
+              "correct_answer_index": 1,
+              "explanation": "The GIL serializes bytecode execution on CPython, which means multi-threaded CPU-bound programs do not scale linearly on multiple cores without multiprocessing or native C extensions."
+            }
+          ],
+          "created_at": "2026-09-11T11:44:17.061175"
+        }
+      ],
+      "assessments": [],
+      "challenges": [],
+      "problems": []
+    }
+  },
+  "enrollments": {
+    "enr-learner-001-crs-qnt-101": {
+      "id": "enr-learner-001-crs-qnt-101",
+      "learner_id": "learner-001",
+      "learner_name": "Alex Rivera",
+      "learner_email": "student@platform.edu",
+      "course_id": "crs-qnt-101",
+      "course_title": "Quantum Computing Foundations & Qiskit Algorithms",
+      "enrolled_at": "2026-09-11T11:44:17.061175",
+      "status": "active"
+    }
+  },
+  "progress": {
+    "prog-learner-001-crs-qnt-101": {
+      "id": "prog-learner-001-crs-qnt-101",
+      "learner_id": "learner-001",
+      "course_id": "crs-qnt-101",
+      "completed_lesson_ids": [
+        "les-1-1"
+      ],
+      "completed_quiz_ids": [],
+      "completed_assessment_ids": [],
+      "completed_challenge_ids": [],
+      "completed_problem_ids": [],
+      "quiz_scores": {},
+      "assessment_scores": {},
+      "overall_percentage": 25.0,
+      "last_activity": "2026-09-11T11:44:17.061175"
+    }
+  },
+  "submissions": {},
+  "notifications": [
+    {
+      "id": "bbe82adb-8c75-4ccc-89c9-b30b17ea6b19",
+      "user_id": "usr-753bbde8",
+      "title": "Welcome to the Platform!",
+      "message": "Welcome reddy! Your Learner account is active and ready.",
+      "type": "info",
+      "link": "/learner/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-12T02:52:38.054307"
+    },
+    {
+      "id": "d4eda30b-a716-4b32-98b6-4541852ee91b",
+      "user_id": "usr-6f8d617f",
+      "title": "Welcome to the Platform!",
+      "message": "Welcome SHAIK MUBEENA! Your Trainer account is active and ready.",
+      "type": "info",
+      "link": "/trainer/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-11T17:39:25.624007"
+    },
+    {
+      "id": "a42bcb90-8f53-4929-b226-9ecfe6470b32",
+      "user_id": "usr-620fef7f",
+      "title": "Welcome to the Platform!",
+      "message": "Welcome SHAIK MUBEENA! Your Learner account is active and ready.",
+      "type": "info",
+      "link": "/learner/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-11T16:34:41.475328"
+    },
+    {
+      "id": "576c084f-36d2-4640-995a-084c587b517d",
+      "user_id": "usr-8c65ca38",
+      "title": "Welcome to the Platform!",
+      "message": "Welcome dinesh! Your Learner account is active and ready.",
+      "type": "info",
+      "link": "/learner/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-11T14:26:53.577529"
+    },
+    {
+      "id": "20f44f50-48ad-4148-bd5b-3cad079ed416",
+      "user_id": "usr-eeb92316",
+      "title": "Welcome to the Platform!",
+      "message": "Welcome dinesh! Your Learner account is active and ready.",
+      "type": "info",
+      "link": "/learner/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-11T13:50:04.191006"
+    },
+    {
+      "id": "84b68837-ede7-445a-ae5d-9b2c6f337646",
+      "user_id": "usr-541f9b0a",
+      "title": "Welcome to the Platform!",
+      "message": "Welcome SHAIK MUBEENA! Your Learner account is active and ready.",
+      "type": "info",
+      "link": "/learner/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-11T11:47:50.610246"
+    },
+    {
+      "id": "18370699-99ed-4649-aaef-676942e7a75e",
+      "user_id": "usr-2e3a499d",
+      "title": "Welcome to the Platform!",
+      "message": "Welcome Dinesh! Your Trainer account is active and ready.",
+      "type": "info",
+      "link": "/trainer/dashboard",
+      "is_read": false,
+      "created_at": "2026-09-11T11:45:20.089631"
+    },
+    {
+      "id": "notif-001",
+      "user_id": "learner-001",
+      "title": "Welcome to the Platform!",
+      "message": "You have been automatically enrolled in 'Quantum Computing Foundations & Qiskit Algorithms'. Explore your lessons and complete your first quiz.",
+      "type": "info",
+      "link": "/learner/course/crs-qnt-101",
+      "is_read": false,
+      "created_at": "2026-09-11T11:44:17.061175"
+    },
+    {
+      "id": "notif-002",
+      "user_id": "trainer-001",
+      "title": "New Student Enrolled",
+      "message": "Alex Rivera has enrolled in 'Quantum Computing Foundations & Qiskit Algorithms'.",
+      "type": "success",
+      "link": "/trainer/learners",
+      "is_read": false,
+      "created_at": "2026-09-11T11:44:17.061175"
+    }
+  ]
+}

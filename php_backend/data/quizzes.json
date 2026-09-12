@@ -1,0 +1,10 @@
+[
+  {
+    "id": "quiz-001",
+    "course_id": "course-001",
+    "title": "Qubit Superposition & Gate Logic Check",
+    "time_limit": 15,
+    "passing_score": 70,
+    "created_at": "2026-09-11T12:00:00Z"
+  }
+]
